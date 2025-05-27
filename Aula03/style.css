@@ -1,0 +1,49 @@
+header {
+    color: darkblue;
+    background-color: blanchedalmond;
+    padding: 0.5rem;
+}
+
+.abaDicas {
+    font-size: larger;
+    font-weight: 600;
+}
+
+#imagemFuradeira {
+    width: 9rem;
+    height: 9rem;
+}
+
+a[href="https://github.com/Samuel-millerr/GitHub_LIMA_Senai"] {
+    text-decoration: none;
+} 
+
+h1:hover {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+aside::first-line {
+    color: blueviolet;
+}
+
+.listaFooter :first-child{
+    color: brown;
+}
+
+nav > p {
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header a {
+    font-size: large;
+}
+
+img + figcaption {
+    margin-left: 1rem;
+}
+
+img ~ figcaption {
+    
+    color: blue;
+}
