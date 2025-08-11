@@ -1,0 +1,19 @@
+body{
+  margin: 0px;
+  background-color: black;
+  color: rgb(224,217,217);
+}
+
+#app {
+  margin: 0 auto;
+}
+
+header{
+  font-size: 2em;
+  color: white;
+  margin-bottom: 20px;
+  background-color: green;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
