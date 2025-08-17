@@ -1,4 +1,3 @@
-/*
 // Exercício01
 let nome;
 nome = prompt("Digite seu nome: ");
@@ -20,9 +19,9 @@ confirm("Você está preparado para o segundo semestre de desenvolvimento de sis
 let input = confirm("Você está bem?")
 let reposta = (input) ? "Que pena!":"Que bom!";
 alert(reposta);
-*/
 
-/*
+
+
 // Loop
 let marcas= ["Ferrari","Chevrolet","Lamborgni","Fiat"];
 for (let i = 0; i <= marcas.length-1; i++){
@@ -46,9 +45,8 @@ do{
         condicao = false;
     };
 } while (condicao);
-*/
 
-/*
+
 // Arrays
 let lista = ["JAILSON", "PEDRO", "ENZO", "MARIO"];
 
@@ -67,9 +65,8 @@ console.log(lista);
 // SHIFT- RETIRA SEMPRE O PRIMEIRO ELEMENTO DA LISTA
 lista.shift();
 console.log(lista);
-*/
 
-/*
+
 // Funções
 function soma(n1, n2){
     console.log(n1 + n2);
@@ -83,7 +80,7 @@ console.log(soma_braba(4,4));
 
 const sub = (n1, n2) => n1-n2;
 console.log(sub(10,9));
-*/
+
 
 let btn = document.querySelector("button");
 
