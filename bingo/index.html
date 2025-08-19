@@ -5,15 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title> BINGO </title>
         <link rel="stylesheet" href=".\style.css">
-        <script defer src=".\script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;1,14..32,300&display=swap" rel="stylesheet"><script defer src=".\script.js"></script>
     </head>
     <body>
-        <h1>BINGO</h1>
-        <button>SORTEIE</button>
-        <h2></h2>
-        <div>
-            <h3>NÚMEROS SORTEADOS:</h3>
-            <p></p>
-        </div>
+        <header>
+            <h1 id="bingoTitle">BINGO DO TOURINHO</h1>
+        </header>
+        <main>
+            <section>
+                <h3 class="drawnTitle"> NUMEROS SORTEADOS </h3>
+                <hgroup class="hgroup">
+                    <h2 class="htitle">B</h2>
+                    <h2 class="htitle">I</h2>
+                    <h2 class="htitle">N</h2>
+                    <h2 class="htitle">G</h2>
+                    <h2 class="htitle">O</h2>
+                </hgroup>  
+                <div id="gridNumbers">
+                </div>
+            </section>
+            <button class="drawButton">SORTEIE</button>
+        </main>
     </body>
 </html>

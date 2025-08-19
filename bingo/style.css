@@ -1,56 +1,121 @@
 * {
     margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    font-family: Inter, sans-serif;
+    font-weight: 200;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4rem;
+    border-bottom: solid 1px black;
+    background-color: #e7ecef;
+}
+
+main {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background-color: whitesmoke;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed; 
 }
 
-
-h1 {
-    font-size: 56px;
-    font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif, Times, serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+#bingoTitle {
+    color: #ffba08;
+    font-weight: 900;
+    animation: piscar 2s infinite;
 }
 
-button {
-    margin-top: 1rem;
+@keyframes piscar {
+    0% {
+        color: #faa307; 
+    }
+    25% {
+        color: #f48c06; 
+    }
+    50% {
+        color: #e85d04; 
+    }
+        70% {
+        color: #dc2f02; 
+    }
+        90% {
+        color: #d00000; 
+    }
+        99% {
+        color: #dc2f02; 
+    }
+}
+
+.drawnTitle {
+    justify-self: center;
+    padding-bottom: 0.5rem;
+}
+
+.hgroup {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.htitle{
+    cursor: default;
+    background-color: orange;
+    padding: 0.3rem 3rem 0.3rem 3rem;
+    border: solid 1.4px  black;
+    border-radius: 0.4rem;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 900;
+}
+
+#gridNumbers {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.columnDrawnNumbers {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.numbersStyle {
+    cursor: default;
+    background-color: #e5e5e5;
+    padding: 0.4rem 3rem 0.4rem 3rem;
+    border: solid 1.5px grey;
+    border-radius: 0.4rem;
+    font-size: 16px;
+    text-align: center;
+}
+
+.drawButton {
+    width: 36rem;
     padding: 0.5rem;
-    border: none;
-    border-radius: 0.2rem;
-    transition: 1s;
-    background-color: grey;
-    font-size: medium;
-    font-weight: 500;
-    color: white;
+    font-weight: 600;
+    background-color: #e5e5e5;
+    border: solid 1.5px black;
+    border-radius: 0.5rem;
+    transition: linear 1s;
 }
 
-button:hover {
-    background-color: rgb(29, 28, 28);
-}
-
-h2 {
-    font-size: 48px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif, Times, serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
-}
-
-div {
-    align-self: flex-start;
-    padding: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif, Times, serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
-}
-
-p {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+.drawButton:hover {
+    background-color: #cfcdcd;
 }
