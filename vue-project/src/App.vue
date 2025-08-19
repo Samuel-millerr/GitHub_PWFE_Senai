@@ -1,14 +1,17 @@
+# Todo arquivo .vue é um componentes
+# Todo componente pode ter 3 partes, script(javaScript), template(html) e style(css)
 <script setup>
-import primeiroComponente from './components/primeiroComponente.vue';
-import dados from './components/dados.vue';
+import primeiroComponente from "./components/primeiroComponente.vue"
+import comDados from "./components/comDados.vue" 
+import comDadosReativos from "./components/comDadosReativos.vue";
 </script>
 
 <template>
   <header>VUE</header>
-  <dados/>
+  <comDadosReativos/>
   <primeiroComponente/>
+  <comDados/>
 </template>
 
 <style scoped>
 </style>
-

@@ -1,19 +1,33 @@
-body{
+/* Arquivo utilizado para todos os css globais */
+body {
   margin: 0px;
   background-color: black;
-  color: rgb(224,217,217);
-}
-
-#app {
-  margin: 0 auto;
+  color: whitesmoke;
 }
 
 header{
   font-size: 2em;
   color: white;
-  margin-bottom: 20px;
   background-color: green;
+  margin-bottom: 20px;
   font-weight: bold;
   padding: 10px;
   text-align: center;
+}
+
+#app {
+  font-weight: normal;
+}
+
+.componente{
+    text-align: center;
+    border: 2px solid green;
+    background-color: #050d04;
+    border-radius: 12px;
+    margin: 30px;
+    padding: 10px;
+}
+
+.componente{
+    font-size: 1.2rem;
 }
