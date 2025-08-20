@@ -4,10 +4,12 @@
 import primeiroComponente from "./components/primeiroComponente.vue"
 import comDados from "./components/comDados.vue" 
 import comDadosReativos from "./components/comDadosReativos.vue";
+import produto from "./components/produto.vue"
 </script>
 
 <template>
   <header>VUE</header>
+  <produto/>
   <comDadosReativos/>
   <primeiroComponente/>
   <comDados/>
