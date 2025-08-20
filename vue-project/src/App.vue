@@ -5,10 +5,12 @@ import primeiroComponente from "./components/primeiroComponente.vue"
 import comDados from "./components/comDados.vue" 
 import comDadosReativos from "./components/comDadosReativos.vue";
 import produto from "./components/produto.vue"
+import nome from "./components/nome.vue"
 </script>
 
 <template>
   <header>VUE</header>
+  <nome/>
   <produto/>
   <comDadosReativos/>
   <primeiroComponente/>

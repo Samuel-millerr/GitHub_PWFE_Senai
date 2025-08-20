@@ -13,6 +13,7 @@ import {ref} from "vue"
     <section>
         <h2 >Nome - {{ nome }}</h2>
         <p>Preço - {{ preco }}</p>
+        <!-- os "v-" se consistem em diretivas no vue que permite aplicar um comportamento reativo ou dinâmico a determinado elemento -->
         <button  v-on:click="aplicar_desconto()"> desconto </button>
     </section>
 </template>
