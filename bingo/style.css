@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Inter, sans-serif;
 }
 
 body {
-    font-family: Inter, sans-serif;
     font-weight: 200;
 }
 
@@ -14,12 +14,11 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding: 2rem;
     background-color: whitesmoke;
     background-repeat: no-repeat; 
     background-size: cover; 
     background-attachment: fixed; 
-    padding: 5rem 0 8rem 0;
+    padding: 2rem 0 8rem 0;
 }
 
 header {
@@ -67,6 +66,15 @@ footer {
     }
 }
 
+#caseNumber {
+    text-align: center;
+    color: #dc2f02;
+}
+
+#table {
+    padding-top: 2rem;
+}
+
 .hgroup {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -112,6 +120,10 @@ footer {
     font-weight: 500;
 }
 
+.numbersStyleDrawn {
+    background-color: aqua;
+}
+
 #drawButton {
     width: 36rem;
     padding: 0.5rem;
@@ -125,4 +137,8 @@ footer {
 
 #drawButton:hover {
     background-color: #c0c0c0;
+}
+
+#allRights {
+    font-weight: 500;
 }

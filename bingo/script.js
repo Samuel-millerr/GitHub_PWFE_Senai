@@ -19,7 +19,7 @@ for (let i = 1; i <= 5; i++){
 }
 
 function random(num){
-    return Math.floor(Math.random() * (num+1));
+    return Math.floor(Math.random(1, 75) * (num+1));
 }
 
 function getLetterByNumber(num) {
