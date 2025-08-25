@@ -9,15 +9,6 @@ body {
     font-weight: 200;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.4rem;
-    border-bottom: solid 1px black;
-    background-color: #e7ecef;
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -28,12 +19,31 @@ main {
     background-repeat: no-repeat; 
     background-size: cover; 
     background-attachment: fixed; 
+    padding: 5rem 0 8rem 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4rem;
+    border-bottom: solid 1px black;
+    background-color: #e7ecef;
+}
+
+footer {
+    padding: 1.5rem;
+    background-color: orange;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
 }
 
 #bingoTitle {
     color: #ffba08;
-    font-weight: 900;
-    animation: piscar 2s infinite;
+    font-weight: 600;
+    animation: piscar 4s infinite;
 }
 
 @keyframes piscar {
@@ -57,11 +67,6 @@ main {
     }
 }
 
-.drawnTitle {
-    justify-self: center;
-    padding-bottom: 0.5rem;
-}
-
 .hgroup {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -75,9 +80,9 @@ main {
     padding: 0.3rem 3rem 0.3rem 3rem;
     border: solid 1.4px  black;
     border-radius: 0.4rem;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
-    font-weight: 900;
+    font-weight: 500;
 }
 
 #gridNumbers {
@@ -104,18 +109,20 @@ main {
     border-radius: 0.4rem;
     font-size: 16px;
     text-align: center;
+    font-weight: 500;
 }
 
-.drawButton {
+#drawButton {
     width: 36rem;
     padding: 0.5rem;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
     background-color: #e5e5e5;
     border: solid 1.5px black;
     border-radius: 0.5rem;
     transition: linear 1s;
 }
 
-.drawButton:hover {
-    background-color: #cfcdcd;
+#drawButton:hover {
+    background-color: #c0c0c0;
 }
