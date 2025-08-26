@@ -1,10 +1,11 @@
 let gridNumbers = document.getElementById("gridNumbers");
 let btn = document.getElementById("drawButton");
-let caseNumber  = document.getElementById("caseNumber");
+let caseNumber  = document.getElementById("drawNumber");
 
 let listaSorteados = [];
 let drawNumber = 1;
 
+// Adiciona o grid dos números do bingo assim que a página é iniciada
 for (let i = 1; i <= 5; i++){
     let newColumn = document.createElement("hgroup"); // Cria uma nova coluna 
     newColumn.classList.add("columnDrawnNumbers"); // Adiciona a classe de style a nova coluna
