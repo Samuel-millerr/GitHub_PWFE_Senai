@@ -22,6 +22,7 @@ function random(num){
     return Math.floor(Math.random(1, 75) * (num+1));
 }
 
+// Verifica qual letra corresponde a certo número
 function getLetterByNumber(num) {
     if (num <= 15) return "B";
     if (num <= 30) return "I";
@@ -31,19 +32,30 @@ function getLetterByNumber(num) {
 }
 
 function draw() {
-    if (listaSorteados.length == 75) {
+    // Condição para verificar se todos os números já foram sorteados
+    if (listaSorteados.length > 75) {
         alert("Todos os números já foram sorteados!")
     } else {
         let number;
         do {
             number = random(75);
         } while (listaSorteados.includes(number));
-        listaSorteados.push(number)
 
-        let result = getLetterByNumber(number) + number;
-        console.log(number)
+        listaSorteados.push(number) // Adiciona o número sorteado na lista
 
-        caseNumber.innerText = result;
+        const result = getLetterByNumber(number) + number;
+
+        caseNumber.innerText = result; // Injeta o número sorteado no HTML
+        
+        let groupNumbers = gridNumbers.querySelectorAll(".numbersStyle") // Pega as tags HTML com a classe numbersStyle (Todos os números)
+        console.log(groupNumbers)
+        // Utiliza um for para procurar o número sorteado e qual for encontrado o mesmo muda de classe
+        for (let i=0;i < groupNumbers.length; i++){
+            let actualNumber = parseInt(groupNumbers[i].innerText);
+            if (actualNumber == number) {
+                groupNumbers[i].classList.add("numbersDrawStyle");
+            }      
+        }
     }
 }
 
